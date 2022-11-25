@@ -13,6 +13,8 @@ footer{
 }
 body{
     background-color: #847663;
+    font-size: larger;
+    font-family: 'Open Sans', sans-serif;
 }
 img{
     padding: 1rem;
