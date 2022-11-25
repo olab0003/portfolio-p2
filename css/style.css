@@ -1,0 +1,83 @@
+footer{
+    padding: 1rem;
+    font-size: larger;
+    text-align: center;
+}
+body{
+    background-color: #847663;
+}
+img{
+    padding: 1rem;
+}
+ul{
+    padding: 1rem; 
+    align-items: center;
+}
+h4{
+    color: #b5b2ac;
+}
+h1{
+    text-align: center;
+}
+
+.box{
+    background-color: #b5b2ac;
+    display: block;
+    text-align: center;
+}
+.box2{
+    background-color: #b5b2ac;
+    display: block;
+    text-align: center;
+}
+.box3{
+    background-color: #b5b2ac;
+    display: block;
+    text-align: center;
+}
+
+@media screen and (min-width:760px) {
+    .search-container a ul input[type=search]{
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+
+    }
+    
+    .box2{
+        display: inline-block;
+        width: 150px;
+        width: 100%;
+    }
+    /*img*/
+    .Portfolio{
+        vertical-align: middle;
+        display:inline-block ;
+    }
+    .box{
+        display: inline-block;
+        width: 100%;
+        align-items: center;
+    }
+    /**/
+    .Portfolio{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "box box2 box3"
+        "box box2 box3"
+    }
+    .box2{
+        grid-area: box2;
+    }
+    .box{
+        grid-area: box;
+    }
+    .box3{
+        grid-area: box3;
+    }
+}
