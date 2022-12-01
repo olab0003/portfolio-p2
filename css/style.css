@@ -29,23 +29,14 @@ h1{
     text-align: center;
 }
 
-.box{
-    background-color: #b5b2ac;
-    display: block;
-    text-align: center;
-}
-.box2{
-    background-color: #b5b2ac;
-    display: block;
-    text-align: center;
-}
-.box3{
+.box,.box2,.box3,.box4{
     background-color: #b5b2ac;
     display: block;
     text-align: center;
 }
 
-@media screen and (min-width:760px) {
+
+@media screen and (min-width:1124px) {
     .search-container a ul input[type=search]{
         float: none;
         display: block;
@@ -77,8 +68,11 @@ h1{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
         grid-template-areas: 
-        "box box2 box3"
-        "box box2 box3"
+        "box box box"
+        "box2 box2 box2"
+        "box3 box3 box3"
+        "box4 box4 box4"
+        
     }
     .box2{
         grid-area: box2;
@@ -88,5 +82,8 @@ h1{
     }
     .box3{
         grid-area: box3;
+    }
+    .box4{
+        grid-area: box4;
     }
 }
